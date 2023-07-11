@@ -1,0 +1,541 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+
+.containerlinks a{
+    margin :10px;
+     padding: 10px; 
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.containerlinks ul{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.containerlinks a:hover{
+    background-color: #312d2d;
+    border-bottom: 2px solid white;
+   
+    
+}
+.containerlogo h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6em;
+}
+.containerlogo{
+    background-color: rgb(0, 0, 0);
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .subtitle{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.containerlogo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+
+}
+.containerlogo .logo{
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 3rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+
+@keyframes logo-anim2 {
+    from {
+top: 0.8rem;
+left: 2.7rem;
+transform: scale(1.2);
+opacity: 0.7;
+} to {
+top: 0.4rem;
+left: 2.4rem;
+transform: scale(1);
+opacity: 0.9;
+}
+    
+}
+.containerlogo > .logo > span:nth-child(2) {
+    position: relative;
+    color: rgb(69, 111, 195);
+    text-shadow: 0.1rem 0.1rem 0 rgb(43, 217, 226);
+    top: 10px;
+    left: -13px;
+    opacity: 0.7;
+    
+    }
+
+
+.containerlogo > .logo > span:nth-child(2):hover {
+position: absolute;
+text-shadow: 0.1rem 0.1rem 0 rgb(43, 217, 226);
+z-index: 5;
+animation: logo-anim2 0.75s cubic-bezier(0.8,0.2,1,1) infinite alternate;
+color: rgb(69, 111, 195);
+}
+
+.container a input:hover{
+    background-color: red;
+}
+
+#HOME_{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.container a input{  
+    position: relative;
+    z-index: 10;
+    transform: scale(1.1);
+}
+
+.container a input:hover{
+    transform: scale(1.15);
+    
+}
+
+main .container{
+    background-color: #7b91ad;
+    height: 120vh;
+    width: 100vw;
+}
+
+ h2.title{
+    position: absolute;
+    top: 200px;
+    z-index: 10;
+   color: #1d2a48;
+   font-size: 40px;
+    left: 30px;
+    font-weight:10800;
+    font-family: 'Kanit', sans-serif;
+   
+} 
+h1.subtitle{
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    line-height: 70px;
+    z-index: 10;
+    top: 210px;
+    left: 30px;
+    font-size: 70px;
+    color: black;
+
+} 
+section{
+    height: 1000px;
+    background-color: #fff;
+}
+
+#BESTSELLERS_ h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+#RECOMMENDATIONS_ h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+#REVIEWS_ h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+#CONTACT_ h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#BESTSELLERS_:hover{
+    /* transform: scale(1.1);
+    transition: all 0.5s; */
+    animation-name: selleranim;
+    animation-duration: 0.2s;
+    /* animation-direction: alternate-reverse; */
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes selleranim {
+    from{
+        /* position: relative;
+        top: 2px;
+        font-size: 25px; */
+
+    }
+    to{
+        /* position: relative;
+        top: -3px;
+        font-size: 30px; */
+        color: red;
+
+    }
+    
+}
+#BESTSELLERS_ #cardholder .container1,.container2,.container3,.container4,.container5{
+    
+    height: 470px;
+    padding: 1rem;
+    width: 200px;
+   background-color: #f1e4e4;
+    border: 2px solid white;
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 5rem rgba(6, 0, 0, 0.133);
+
+    
+}
+
+
+
+
+
+#RECOMMENDATIONS_ #cardholder2 .container6,.container7,.container8,.container9,.container10{
+    
+    height: 495px;
+    position: relative;
+    z-index: 3;
+    padding: 1rem;
+    width: 200px;
+    background-color: #f1e4e4;
+    border: 2px solid white;
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 5rem rgba(6, 0, 0, 0.133);
+
+    
+}
+
+#BESTSELLERS_ #cardholder .container1:hover,.container2:hover,.container3:hover,.container4:hover,.container5:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: #eac9c9;
+    border: 2px solid rgb(239, 137, 137);
+    
+    
+
+    
+    
+}
+
+
+
+.focus{
+    background-color: rgb(191, 191, 222);
+    position: relative;
+    border: 5px solid rgb(177, 191, 222);
+    z-index: 100;
+    width: 200px;
+    height: 23;
+    border-radius: 20px;
+
+}
+
+.focus:focus{
+    z-index: -2;
+    transform: scale(0.1);
+    transition: all 0.4s;
+}
+
+
+#btn:focus{
+    z-index: -4;
+}
+
+#btn{
+    background-color: rgb(0, 194, 0); 
+    border: 5px solid rgb(0, 194, 0);
+    position: relative;
+    top: -26px;
+    width: 200px; 
+    z-index: 0;
+    color: white;
+    border-radius: 20px;
+}
+
+
+ #RECOMMENDATIONS_ #cardholder2 .container6:hover,.container7:hover,.container8:hover,.container9:hover,.container10:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: #eac9c9;
+    border: 2px solid rgb(239, 137, 137);
+}
+
+#BESTSELLERS_ #cardholder{
+    text-align: center;
+    word-spacing: 10px;
+}
+
+
+#RECOMMENDATIONS input:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+
+#RECOMMENDATIONS_ #cardholder2{
+    text-align: center;
+    word-spacing: 10px;
+}
+
+
+.img1,.img2,.img3,.img4,.img5{
+    position: relative;
+    top: 12px;
+}
+
+
+div.text1{
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: -80px;
+}
+
+.reviewcardholder{
+    display: inline-block;
+}
+#REVIEWS_{
+    text-align: center;
+    background-color: rgb(230, 230, 163);
+}
+
+#REVIEWS_ .reviewcard1,.reviewcard2{
+    
+    height: 325px;
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem;
+    width: 200px;
+    display:inline-block;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 5rem rgba(22, 35, 1, 0.133);
+    border: 2px solid rgb(157, 224, 1);
+  
+
+    
+}
+
+#REVIEWS_ .reviewcard1:hover,.reviewcard2:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+    background-color: #bfc873;
+
+}
+#REVIEWS_ .rev{
+    border:2px solid white;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1rem 1rem 5rem rgba(15, 14, 14, 0.133);
+    
+}
+#REVIEWS_ .rev:hover{
+    color: white;
+    background-color: #84863e;
+
+    transform: scale(1.11);
+    transition: all 0.5s;
+}
+
+
+
+
+#contact{
+    height: 530px;
+    color: white;
+    background-color: #4e44db;
+    
+}
+
+#contact{
+    height: 460px;
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5c5ba8;
+    padding: 2rem 1rem;
+}
+
+#contact h2{
+    color: rgb(255, 251, 251);
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: min(20rem, 100%);
+}
+
+#contact form label{
+    font-size: 1.25rem;
+    color: rgb(239, 240, 244);
+    font-weight: 500;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#contact form input, #contact form textarea{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    color: #224;
+    font-size: 1.25rem;
+    height: 1.7rem;
+    line-height: 1.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.2rem;
+    border: none;
+    width: calc(100% - 1rem);
+    background: white;
+}
+
+#contact form input:focus, #contact form textarea:focus {
+    outline: solid 0.2rem #202287;
+}
+
+#contact form textarea {
+    resize: vertical;
+    min-height: 4.7rem;
+    height: 4.7rem;
+    /* max-height: 10rem; */
+}
+
+#contact form input[type=submit]{
+    margin-top: 3rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: rgb(19, 41, 153);
+    border-radius: 2rem;
+    height: 2rem;
+    width: min-content;
+    padding: 0.1rem 1rem;
+    border: solid rgb(19, 41, 153) 0.2rem;
+}
+
+#contact form input[type=submit]:hover {
+    background: #1d0b6c;
+    color: white;
+}
+
+#navlinks .logobox {
+    display: none;
+}
+
+#footer {
+    background: #50119c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: white;
+    padding: 2rem 0 1rem 0 ;
+}
+
+#footer .twitter {
+    background-image: url(assets/twitter.svg);
+}
+
+#footer .youtube {
+    background-image: url(assets/youtube.svg);
+}
+
+#footer .facebook {
+    background-image: url(assets/facebook.svg);
+}
+
+#footer .instagram {
+    background-image: url(assets/instagram.svg);
+}
+
+#footer .whatsapp {
+    background-image: url(assets/whatsapp.svg);
+}
+
+#footer #links, #socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#footer #links a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    margin: 0 0.5rem;
+}
+
+#footer #links a:hover {
+    /* text-decoration: underline; */
+    opacity: 1;
+    
+}
+
+#socials {
+    padding: 1rem 0;
+}
+
+#socials a {
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    margin: 0.5rem;
+    background-size: 100%;
+    transition: all 0.2s;
+}
+
+#socials a:hover {
+    transform: scale(1.2);
+    transition: all 0.2s;
+}
+
+.backtotop a input:hover{
+    background-color: black;
+    color: white;
+    outline: 0.5px solid white;
+    
+}
+.backtotop a input{
+    padding: 5px;  
+    border-radius: 20px;
+}
