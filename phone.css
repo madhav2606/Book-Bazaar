@@ -1,0 +1,47 @@
+header{
+    display: flex;
+    flex-direction: column;
+    /* align-items: left; */
+    height:230px;
+   opacity: 0.7;position: fixed;
+   z-index: 1000;
+}
+header .containerlinks ul{
+    position: relative;
+    top: -0px;
+
+    line-height: 0px;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: center; */
+    /* background-color: grey; */
+
+}
+.containerlogo{
+    color: red;
+
+} 
+.containerlogo .logo{
+    display: none;
+}
+
+#HOME_ .subtitle{
+    font-size: 2rem;
+    /* margin-top: 10px; */
+    line-height: 30px;
+    padding-top: 45px;
+}
+
+body{
+    width: 100vw;
+    position: relative;
+    top: 230px;
+}
+
+.backtotop{
+    position: relative;
+    left: -41%;
+}
